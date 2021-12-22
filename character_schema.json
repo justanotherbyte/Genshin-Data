@@ -4,7 +4,7 @@
     "title": "Character",
     "type": "object",
     "additionalProperties": false,
-    "required": ["name", "enum_key", "rarity", "element", "birthday", "weapon", "description", "ascension_stat", "stats", "skills", "passive"],
+    "required": ["name", "enum_key", "rarity", "element", "birthday", "weapon", "description", "ascension_stat", "stats", "skills", "passive", "constellations"],
     "properties": {
         "name": {"type": "string"},
         "enum_key": {"type": "string"},
@@ -187,6 +187,20 @@
         },
         "passive": {
             "type": "array",
+            "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                    "name": {"type": "string"},
+                    "description": {"type": "string"}
+                },
+                "required": ["name", "description"]
+            }
+        },
+        "constellations": {
+            "type": "array",
+            "minItems": 6,
+            "maxItems": 6,
             "items": {
                 "type": "object",
                 "additionalProperties": false,
