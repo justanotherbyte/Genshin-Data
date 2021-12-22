@@ -43,7 +43,15 @@
             ]
         },
         "description": {"type": "string"},
-        "ascension_stat": {"type": "string"},
+        "ascension_stat": {
+            "type": "string",
+            "enum": [
+                "cr%", "cd%",
+                "atk%", "hp%", "def%",
+                "electro%", "cryo%", "phys%", "anemo%", "pyro%", "hydro%", "geo%", "dendro%",
+                "em%", "er%", "hb%"
+            ]
+        },
         "stats": {
             "type": "object",
             "additionalProperties": false,
