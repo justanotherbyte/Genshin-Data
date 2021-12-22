@@ -1,0 +1,192 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "Characters.json",
+    "title": "Character",
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+        "name": {"type": "string"},
+        "enum_key": {"type": "string"},
+        "rarity": {
+            "type": "integer",
+            "enum": [4, 5]
+        },
+        "element": {
+            "type": "string",
+            "enum": [
+                "Anemo",
+                "Cryo",
+                "Dendro",
+                "Electro",
+                "Hydro",
+                "Geo",
+                "Pyro"
+            ]
+        },
+        "birthday": {
+            "type": "array",
+            "minItems": 2,
+            "maxItems": 2,
+            "items": {
+                "type": "integer"
+            }
+        },
+        "weapon": {
+            "type": "string",
+            "enum": [
+                "Claymore",
+                "Bow",
+                "Catalyst",
+                "Polearm",
+                "Sword"
+            ]
+        },
+        "description": {"type": "string"},
+        "ascension_stat": {"type": "string"},
+        "stats": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "base": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                        "hp": {
+                            "type": "array",
+                            "items": {"type": "number"}
+                        },
+                        "atk": {
+                            "type": "array",
+                            "items": {"type": "number"}
+                        },
+                        "def": {
+                            "type": "array",
+                            "items": {"type": "number"}
+                        }
+                    },
+                    "required": ["hp", "atk", "def"]
+                },
+                "asc": {
+                    "type": "array",
+                    "items": {"type": "number"}
+                }
+            },
+            "required": ["base", "asc"]
+        },
+        "skills": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "autoAttack": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                        "name": {"type": "string"},
+                        "description": {"type": "string"},
+                        "stats": {
+                            "type": "array",
+                            "items": {
+                                "type": "array",
+                                "items": {"type": ["number", "null"]}
+                            }
+                        },
+                        "labelName": {
+                            "type": "array",
+                            "items": {"type": "string"}
+                        },
+                        "statLabels": {
+                            "type": "array",
+                            "items": {"type": "string"}
+                        }
+                    },
+                    "required": ["name", "description"]
+                },
+                "skill": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                        "name": {"type": "string"},
+                        "description": {"type": "string"},
+                        "stats": {
+                            "type": "array",
+                            "items": {
+                                "type": "array",
+                                "items": {"type": ["number", "null"]}
+                            }
+                        },
+                        "labelName": {
+                            "type": "array",
+                            "items": {"type": "string"}
+                        },
+                        "statLabels": {
+                            "type": "array",
+                            "items": {"type": "string"}
+                        }
+                    },
+                    "required": ["name", "description"]
+                },
+                "burst": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                        "name": {"type": "string"},
+                        "description": {"type": "string"},
+                        "stats": {
+                            "type": "array",
+                            "items": {
+                                "type": "array",
+                                "items": {"type": ["number", "null"]}
+                            }
+                        },
+                        "labelName": {
+                            "type": "array",
+                            "items": {"type": "string"}
+                        },
+                        "statLabels": {
+                            "type": "array",
+                            "items": {"type": "string"}
+                        }
+                    },
+                    "required": ["name", "description"]
+                },
+                "alternateSprint": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                        "name": {"type": "string"},
+                        "description": {"type": "string"},
+                        "stats": {
+                            "type": "array",
+                            "items": {
+                                "type": "array",
+                                "items": {"type": ["number", "null"]}
+                            }
+                        },
+                        "labelName": {
+                            "type": "array",
+                            "items": {"type": "string"}
+                        },
+                        "statLabels": {
+                            "type": "array",
+                            "items": {"type": "string"}
+                        }
+                    },
+                    "required": ["name", "description"]
+                }
+            },
+            "required": ["autoAttack", "skill", "burst"]
+        },
+        "passive": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                    "name": {"type": "string"},
+                    "description": {"type": "string"}
+                },
+                "required": ["name", "description"]
+            }
+        }
+    }
+}
