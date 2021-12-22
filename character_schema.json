@@ -4,6 +4,7 @@
     "title": "Character",
     "type": "object",
     "additionalProperties": false,
+    "required": ["name", "enum_key", "rarity", "element", "birthday", "weapon", "description", "ascension_stat", "stats", "skills", "passive"],
     "properties": {
         "name": {"type": "string"},
         "enum_key": {"type": "string"},
