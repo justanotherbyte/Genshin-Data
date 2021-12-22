@@ -28,7 +28,7 @@
                 "1-Hit DMG", "2-Hit DMG", "3-Hit DMG", "4-Hit DMG", "Charged Attack Slashing DMG", "Charged Attack Final DMG", "Charged Attack Stamina Cost", "Max Duration", "Plunge DMG", "Low Plunge DMG", "High Plunge DMG"
             ],
             "statLabels": [
-                "{0:.2%}", "{0:.2%}", "{0:.2%}", "{0:.2%}", "{0:.2%}", "{0:.2%}", "{0:d}/s", "{0:d}s", "{0:.2%}", "{0:.2%}"
+                "%.2f", "%.2f", "%.2f", "%.2f", "%.2f", "%.2f", "%d/s", "%ds", "%.2f", "%.2f"
             ],
             "stats": [
                 [0.8969799876213074, 0.8763399720191956, 0.9881399869918823, 1.3398799896240234, 0.6880000233650208, 1.246999979019165, 40, 5, 0.8950539827346802, 1.789728045463562, 2.235466957092285],
@@ -50,7 +50,7 @@
             "name": "Searing Onslaught",
             "description": "Performs a forward slash that deals **Pyro DMG**\nThis skill can be used 3 times consecutively. Enters CD if not cast again within a short period.\n\n*The slashes represent the values that Diluc holds dear: one for justice, one for courage, and one for duty.*",
             "statLabels": [
-                "{0:.2%}", "{0:.2%}", "{0:.2%}", "{0:d}s"
+                "%.2f", "%.2f", "%.2f", "%ds"
             ],
             "labelName": [
                 "1-Hit DMG", "2-Hit DMG", "3-Hit DMG", "Cooldown"
@@ -73,9 +73,9 @@
         },
         "burst": {
             "name": "Dawn",
-            "description": "Releases intense flames to knock nearby opponents back, dealing **Pyro DMG**. The flames then converge into the weapon, summoning a Phoenix that flies forward and deals massive <span style=\\\"color: #FF9999FF;\\\">Pyro DMG</span> to all opponents in its path. The Phoenix explodes upon reaching its destination, causing a large amount of **AoE Pyro DMG**.\nThe searing flames that run down his blade cause it to be infused with **Pyro**.\n\n*The only reason to walk in the darkness is to light it up. Behold, that fleeing light in the dead of night is the herald of the coming dawn.*",,
+            "description": "Releases intense flames to knock nearby opponents back, dealing **Pyro DMG**. The flames then converge into the weapon, summoning a Phoenix that flies forward and deals massive <span style=\\\"color: #FF9999FF;\\\">Pyro DMG</span> to all opponents in its path. The Phoenix explodes upon reaching its destination, causing a large amount of **AoE Pyro DMG**.\nThe searing flames that run down his blade cause it to be infused with **Pyro**.\n\n*The only reason to walk in the darkness is to light it up. Behold, that fleeing light in the dead of night is the herald of the coming dawn.*",
             "statLabels": [
-                "{0:.2%}", "{0:.2%}", "{0:.2%}", "{0:d}s", "{0:d}s", "{0:d}"
+                "%.2f", "%.2f", "%.2f", "%ds", "%ds", "%d"
             ],
             "labelName": [
                 "Slashing DMG", "DoT", "Explosion DMG", "Cooldown", "Infusion Duration", "Energy Cost"
