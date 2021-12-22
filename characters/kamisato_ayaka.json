@@ -333,7 +333,7 @@
             ],
             "labelName": ["1-Hit DMG", "2-Hit DMG", "3-Hit DMG", "4-Hit DMG", "5-Hit DMG", "Charged Attack DMG", "Charged Attack Stamina Cost", "Plunge DMG", "Low Plunge DMG", "High Plunge DMG"],
             "statLabels": [
-                "{0:.2%}", "{0:.2%}", "{0:.2%}", "{0:.2%} x3", "{0:.2%}", "{0:.2%} x3", "{0:d}", "{0:.2%}", "{0:.2%}", "{0:.2%}"
+                "%.2f", "%.2f", "%.2f", "%.2f x3", "%.2f", "%.2f x3", "%d", "%.2f", "%.2f", "%.2f"
             ]
         },
         "skill": {
@@ -356,7 +356,7 @@
             ],
             "labelName": ["Skill DMG", "Cooldown"],
             "statLabels": [
-                "{0:.2%}", "{0:d}s"
+                "%.2f", "%ds"
             ]
         },
         "burst": {
@@ -381,7 +381,7 @@
                 "Cutting DMG", "Bloom DMG", "Duration", "Cooldown", "Energy Cost"
             ],
             "statLabels": [
-                "{0:.2%}", "{0:.2%}", "{0:d}s", "{0:d}s", "{0:d}"
+                "%.2f", "%.2f", "%ds", "%ds", "%d"
             ]
         },
         "alternateSprint": {
@@ -403,7 +403,7 @@
                 [10, 15, 5]
             ],
             "labelName": ["Activation Stamina Consumption", "Stamina Drain", "Infusion Duration"],
-            "statLabels": ["{0:d}", "{0:d}/s", "{0:d}s"]
+            "statLabels": ["%d", "%d/s", "%ds"]
         }
     },
     "passive": [
