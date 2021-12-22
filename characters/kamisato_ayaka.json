@@ -6,7 +6,7 @@
     "birthday": [28, 10],
     "weapon": "Sword",
     "description": "Daughter of the Yashiro Comission's Kamisato Clan. Dignified and elegant, as well as wise and strong.",
-    "ascension_stat": "cd",
+    "ascension_stat": "cd%",
     "stats": {
         "base": {
             "hp": [
